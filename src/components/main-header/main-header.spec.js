@@ -1,9 +1,9 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi } from 'vitest'
 
 import { mount } from '@vue/test-utils'
 import MainHeader from './main-header.vue'
 
-describe('HelloWorld', () => {
+describe('MainHeader', () => {
   it('should display the name', () => {
     const wrapper = mount(MainHeader);
     const nameCaption = wrapper.find('h2.name');

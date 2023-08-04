@@ -15,9 +15,15 @@ export default {
     dateNow: ''
   }),
   mounted() {
-    const date = new Date();
-    const formattedDate = date.toDateString();
-    this.dateNow = formattedDate;
+    this.setDate();
+  },
+  methods: {
+    setDate() {
+      const date = new Date();
+      const formattedDate = date.toDateString();
+      const formattedTime = date.toLocaleTimeString();
+      this.dateNow = `${formattedDate} ${formattedTime}`;
+    }
   }
 }
 </script>

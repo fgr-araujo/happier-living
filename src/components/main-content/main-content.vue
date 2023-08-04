@@ -7,6 +7,7 @@
         v-for="(cardItem, cardItemIdx) in cards"
         :key="cardItemIdx">
         <card-item
+          class="card-item"
           :card-name="cardItem.name"
           :card-placeholder="cardItem.placeholder"
           @update-count="(count) => updateCount(count, cardItemIdx)"/>
@@ -26,32 +27,15 @@ export default {
     cards: [
       {
         name: 'Card 1',
-        placeholder: 'Lorem',
+        placeholder: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+        unknown printer took a galley of type and scrambled it to make a type specimen book.`,
         count: 0,
       },
       {
         name: 'Card 2',
-        placeholder: 'Lorem Ipsum',
-        count: 0,
-      },
-      {
-        name: 'Card 1',
-        placeholder: 'Lorem',
-        count: 0,
-      },
-      {
-        name: 'Card 2',
-        placeholder: 'Lorem Ipsum',
-        count: 0,
-      },
-      {
-        name: 'Card 1',
-        placeholder: 'Lorem',
-        count: 0,
-      },
-      {
-        name: 'Card 2',
-        placeholder: 'Lorem Ipsum',
+        placeholder: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`,
         count: 0,
       },
     ]
