@@ -1,27 +1,30 @@
 <style src="./card-item.css"></style>
 <template>
-  <li>
+  <li class="card-item">
     <div class="card-header">
       <div class="photo"></div>
-      <span>{{ cardName }}</span>
+      <span class="name">{{ cardName }}</span>
     </div>
-    <div
-      class="card-placeholder"
-      v-if="!showList">{{ cardPlaceholder }}</div>
     <ul
-      class="card-list"
-      v-if="showList">
+      class="card-list">
       <li
-        class="item"
-        v-for="(item, itemIdx) in list"
-        :key="itemIdx"
-        @click="removeItem(itemIdx)">
-        {{ item }}
+        class="card-placeholder"
+        v-if="!showList">{{ cardPlaceholder }}
       </li>
+      <template v-if="showList">
+        <li
+          class="item"
+          v-for="(item, itemIdx) in list"
+          :key="itemIdx"
+          @click="removeItem(itemIdx)">
+          {{ item }}
+        </li>
+      </template>
     </ul>
     <div class="card-commands">
       <button
         type="button"
+        class="button"
         @click="addItem">
         Add Item
       </button>

@@ -14,14 +14,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.header {
-  display: flex;
-  height: 80px;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #DDD;
-}
-</style>

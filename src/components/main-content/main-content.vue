@@ -1,7 +1,7 @@
 <style src="./main-content.css"></style>
 <template>
-  <section class="main-header">
-    <div class="counter">{{ counterItems }}</div>
+  <section class="main-content">
+    <div class="counter">Item Counter: {{ counterItems }}</div>
     <ul class="card-container">
       <template
         v-for="(cardItem, cardItemIdx) in cards"
@@ -24,6 +24,26 @@ export default {
   },
   data: () => ({
     cards: [
+      {
+        name: 'Card 1',
+        placeholder: 'Lorem',
+        count: 0,
+      },
+      {
+        name: 'Card 2',
+        placeholder: 'Lorem Ipsum',
+        count: 0,
+      },
+      {
+        name: 'Card 1',
+        placeholder: 'Lorem',
+        count: 0,
+      },
+      {
+        name: 'Card 2',
+        placeholder: 'Lorem Ipsum',
+        count: 0,
+      },
       {
         name: 'Card 1',
         placeholder: 'Lorem',

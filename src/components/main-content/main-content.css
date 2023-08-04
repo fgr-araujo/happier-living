@@ -1,1 +1,18 @@
-.main-content {}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.main-content > .counter {
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.main-content > .card-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}

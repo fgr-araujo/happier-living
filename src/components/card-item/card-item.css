@@ -1,3 +1,64 @@
 .card-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #EEE;
+  border-radius: 4px;
+  border: 1px solid #AAA;
+  border-top: 3px solid #F00;
+  padding: 16px;
+  width: 300px;
+  min-height: 400px;
+  gap: 8px;
+}
+
+.card-item > .card-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.card-item > .card-header > .photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #AAA;
+}
+
+.card-item > .card-header > .name {
+  font-size: 1.1;
+}
+
+
+.card-item > .card-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.card-item > .card-list > .item {
+  color: #00F;
+  border-top: 1px solid #AAA;
+  line-height: 1.4rem;
+  font-size: .9rem;
+  cursor: pointer;
+}
+.card-item > .card-list > .item:last-of-type {
+  border-bottom: 1px solid #AAA;
   
+}
+
+
+.card-item > .card-commands {
+  padding: 8px 0;
+}
+
+.card-item > .card-commands > .button {
+  color: #FFF;
+  background-color: #00F;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
 }

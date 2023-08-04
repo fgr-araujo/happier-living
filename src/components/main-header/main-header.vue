@@ -1,8 +1,10 @@
 <style src="./main-header.css"></style>
 <template>
   <header class="main-header">
-    <h2 class="name">{{ myName }}</h2>
-    <h3 class="date">{{ dateNow }}</h3>
+    <div class="container">
+      <h2 class="name">{{ myName }}</h2>
+      <h3 class="date">{{ dateNow }}</h3>
+    </div>
   </header>
 </template>
 

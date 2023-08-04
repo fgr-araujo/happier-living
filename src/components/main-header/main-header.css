@@ -1,1 +1,18 @@
-.main-header {}
+.main-header {
+  position: relative;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #DDD;
+  justify-content: center;
+}
+
+.main-header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px;
+  flex: 1 1 1200px;
+}
