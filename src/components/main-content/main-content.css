@@ -16,3 +16,25 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.main-content > .card-container > .add-card {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-content > .card-container > .add-card > .plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 2.3rem;
+  color: #FFF;
+  border: none;
+  background-color: #1a469b;
+}
+.main-content > .card-container > .add-card > .plus:hover {
+  background-color: #3c469b;
+}

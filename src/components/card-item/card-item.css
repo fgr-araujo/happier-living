@@ -38,27 +38,54 @@
 }
 
 .card-item > .card-list > .item {
-  color: #00F;
   border-top: 1px solid #AAA;
-  line-height: 1.4rem;
-  font-size: .9rem;
-  cursor: pointer;
 }
 .card-item > .card-list > .item:last-of-type {
   border-bottom: 1px solid #AAA;
-  
+}
+.card-item > .card-list > .item > .buttonitem {
+  line-height: 1.4rem;
+  font-size: .9rem;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  color: #1a469b;
+}
+.card-item > .card-list > .item > .buttonitem:hover {
+  background-color: #e6e6e6;
 }
 
 
 .card-item > .card-commands {
+  display: flex;
   padding: 8px 0;
+  gap: 8px;
 }
 
 .card-item > .card-commands > .button {
-  color: #FFF;
-  background-color: #1a469b;
   height: 40px;
   border-radius: 20px;
   border: none;
-  width: 100%;
+  flex: 1 1 auto;
+}
+.card-item > .card-commands > .button__add {
+  background-color: #1a469b;
+  color: #FFF;
+}
+.card-item > .card-commands > .button__add:hover {
+  background-color: #3c469b;
+}
+
+.card-item > .card-commands > .button__remove {
+  flex: 0 0 40px;
+  background-color: #e1e1e1;
+}
+.card-item > .card-commands > .button__remove:hover {
+  background-color: #d1d1d1;
+}
+.card-item > .card-commands > .button > .icon {
+  width: 16px;
+  height: 16px;
+  fill: #1a469b;
 }
