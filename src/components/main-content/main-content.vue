@@ -10,8 +10,17 @@
           class="card-item"
           :card-name="cardItem.name"
           :card-placeholder="cardItem.placeholder"
-          @update-count="(count) => updateCount(count, cardItemIdx)"/>
-      </template>
+          @update-count="(count) => updateCount(count, cardItemIdx)"
+          @remove-card="removeCard(cardItemIdx)"/>
+        </template>
+      <li class="add-card">
+        <button
+          class="plus"
+          type="button"
+          @click="addNewCard">
+          +
+        </button>
+      </li>
     </ul>
   </section>
 </template>
@@ -49,6 +58,18 @@ export default {
   methods: {
     updateCount(count, cardItemIdx) {
       this.cards[cardItemIdx].count = count;
+    },
+    addNewCard() {
+      const newItem = {
+        name: 'Card 2',
+        placeholder: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`,
+        count: 0,
+      }
+      this.cards.push(newItem);
+    },
+    removeCard(cardItemIdx) {
+      this.cards.splice(cardItemIdx, 1);
     }
   }
 }
